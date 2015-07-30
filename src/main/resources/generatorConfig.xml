@@ -17,19 +17,20 @@
 		</jdbcConnection>
 
 		<javaModelGenerator targetPackage="com.robot.turnip.domain"
-			targetProject="C:\02coding\workspace\mybatis-generator-sample\src\main\java">
+			targetProject="C:\02coding\workspace\turnip-generator\src\main\java">
 		</javaModelGenerator>
 
 		<sqlMapGenerator targetPackage="com.robot.turnip.xml"
-			targetProject="C:\02coding\workspace\mybatis-generator-sample\src\main\java">
+			targetProject="C:\02coding\workspace\turnip-generator\src\main\java">
 		</sqlMapGenerator>
 
 		<javaClientGenerator type="XMLMAPPER"
 			targetPackage="com.robot.turnip.dao"
-			targetProject="C:\02coding\workspace\mybatis-generator-sample\src\main\java">
+			targetProject="C:\02coding\workspace\turnip-generator\src\main\java">
 		</javaClientGenerator>
 
-		<table tableName="user_t" domainObjectName="User">
+		<table tableName="user" domainObjectName="User">
+			<property name="useActualColumnNames" value="true"/>
 		</table>
 	</context>
 </generatorConfiguration>
